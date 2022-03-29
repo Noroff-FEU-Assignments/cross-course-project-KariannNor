@@ -76,21 +76,147 @@ font-face {
 }
 
 /* -- Global styles -- */
+body {
+  font-family: "museo-sans";
+}
+
+h1 {
+  font-family: "museo-slab";
+  font-weight: 800;
+}
 
 /* -- Header & Footer -- */
 
-/* -------- Header -------- */
+/* -------- Header --------*/
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  align-items: center;
+  background-color: #f4f2ed;
+  height: 225px;
+  text-align: center;
+}
+
+nav {
+  background-color: #f4f2ed;
+  color: #053541;
+  padding: 5px;
+  justify-items: center;
+}
+
+#logo {
+  margin: 50px auto;
+  max-width: 150px;
+}
+
+.nav-items {
+  padding: 5px;
+  font-size: 14px;
+  text-decoration: none;
+  color: #053541;
+  margin: 0 auto;
+}
+
+/*
+#hamburger-menu {
+  display: none;
+}
+
+#hamburger-menu:checked ~ nav {
+  display: block;
+}
+*/
 
 /* -------- Footer -------- */
 
-/* -- Intro 
-.intro
--- */
+/* Intro */
 
-/* -- Category woman & men 
-.category_wm
--- */
+.intro {
+  background-image: url(../images/hiking_desktop.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  min-height: 60vh;
+  position: relative;
+}
 
+.intro div {
+  text-align: center;
+  color: #053541;
+  padding: 80px 20px;
+  max-width: 530px;
+  margin: 0 auto;
+}
+
+.intro_heading {
+  font-size: 32px;
+}
+
+.p2 {
+  font-family: "museo-sans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.4rem;
+}
+
+/* -- Category woman & men -- */
+
+.category-container {
+  position: relative;
+  top: 24px;
+}
+
+.categories {
+  padding: 20px;
+  margin: -230px auto;
+}
+
+/* .men {
+  position: relative;
+  top: -130px;
+  margin: 0 auto;
+  
+} */
+
+/* 
+.women {
+  position: relative;
+  top: -130px;
+} */
+
+.categories women:nth-child(1) {
+  width: 327px;
+}
+
+.categories men:nth-child(2) {
+  width: 327px;
+}
+
+.select_img {
+  max-height: 60vw;
+}
+
+.category_text {
+  font-family: "museo slab";
+  position: relative;
+  color: white;
+  top: 120px;
+  left: 40px;
+  font-size: 48px;
+}
+
+.shopnow {
+  position: relative;
+  color: white;
+  top: -80px;
+  left: 50px;
+  font-size: 24px;
+}
 /* -- News jackets 
 .news_jackets
 -- */
@@ -102,3 +228,40 @@ font-face {
 /* -- Newsletter & outro 
 .outro
 -- */
+
+/* mobile styles*/
+@media (max-width: 480px) {
+  /* -------- Header -------- */
+  /*input,
+  label {
+    display: none;
+  }*/
+  .nav-items {
+    font-size: 12px;
+  }
+}
+
+/* tablet styles*/
+@media (min-width: 481px) and (max-width: 799px) {
+}
+
+/* desktop styles*/
+@media (min-width: 800px) {
+  .intro_heading {
+    font-size: 68px;
+    width: 600px;
+  }
+  .intro div {
+    padding: 50px 20px;
+    max-width: 600;
+  }
+
+  .p2 {
+    font-size: 24px;
+    line-height: 2.3rem;
+  }
+
+  .categories {
+    flex-direction: column;
+  }
+}
