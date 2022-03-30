@@ -7,31 +7,100 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Rainjackets - Pushing your comfortzone"/>
     <title>Rainydays | Home</title>   
+    <script src="https://kit.fontawesome.com/d518c97c1e.js" crossorigin="anonymous"></script>
     <link href="css/styles.css" rel="stylesheet" />
   </head>
   <body>
     
     <header> 
+     <!-- <label for="hamburger-menu"><i class="fas fa-bars"></i></label>
+      <input type="checkbox" id="hamburger-menu">  -->
+      
+      <img src="images/logo.svg" alt="Rainydays - Pushing Your Comfort Zone" id="logo">
+      
       <nav>
+          <a href=index.html class="nav-items">Home</a>
+          <a href="womens.html" class="nav-items">Womens</a>
+          <a href="mens.html" class="nav-items">Mens</a>
+          <a href="about.html" class="nav-items">Who we are</a>
+          <a href="contact.html" class="nav-items">Contact</a>
+          <i class="fa-solid fa-cart-shopping"></i>
       </nav>
+      
     </header>
+    <main>
+      <section class="intro">
+        <div>      
+          <h1 class="intro_heading">Put us to the test</h1>      
+          <h3>Pushing the comfort zone with our rain jackets. Satisfaction guaranteed.<h3>
+        </div>
+      </section>
 
-    <section class="intro">      
-      <h1>Hello world!</h1>      
-      <p>Welcome to my first website.</p>
-    </section>
+      <Section class="category-container">
+        <div class="categories">   
+            <div class="category">
+              <h2 class="category_text">Women</h1>
+              <img src="../images/category_wmn.jpg" class="select_img" alt="Select Womens jackets">
+              <h3 class="card-text">Shop now <i class="fa-solid fa-arrow-right"></i></h3>
+            </div>
+           
+            <div class="category">
+              <h2 class="category_text">Men</h1>
+              <img src="../images/category_men.jpg" class="select_img" alt="Select Mens jackets">
+              <h3 class="card-text">Shop now <i class="fa-solid fa-arrow-right"></i></h3>
+            </div>
+       </div>
+      </Section>
 
-    <Section class="category_wm">
-    </Section>
+      <section class="new-arrivals">
+        <h2 class="category_text titles">New arrivals</h2>
+        <div class="products">
+          <div class="product">
+            <img src="../images/products/products_1.jpg"alt="">
+            <h3 class="p2">Yukon</h3>
+            <p class="p1">Insulated Hoodie</p>
+            <p class="p1">$186</p> 
+          </div>
+          <div class="product">
+            <img src="../images/products/products_2.jpg"alt="">
+            <h3 class="p2">Chesapeake</h3>
+            <p class="p1">Water resistant Hoodie</p>
+            <p class="p1">$132</p> 
+          </div>
+          <div class="product">
+            <img src="../images/products/products_3.jpg"alt="">
+            <h3 class="p2">Mt. Whitney</h3>
+            <p class="p1">Rain Parka</p>
+            <p class="p1">$230</p> 
+          </div>
+        </div>
+      </section>
 
-    <section class="news_jackets">
-    </section>
+      <section class="shop_category_container">
+        <h2 class="category_text titles">Shop by Category</h2>
+        <div class="category_cards">
+          <div class="category_card">
+            <img src="../images/l_hiking_380x380.jpg"alt="">
+            <h3 class="card-text category">Hiking</h3>
+          </div>
+          <div class="category_card">
+            <img src="../images/l_skiing_380x380.jpg"alt="">
+            <h3 class="card-text category">Skiing</h3>
+          </div>
+          <div class="category_card">
+            <img src="../images/l_casual_380x380.jpg"alt="">
+            <h3 class="card-text category">Casual</h3>
+          </div>
+          <div class="category_card">
+            <img src="../images/l_running_380x380.jpg"alt="">
+            <h3 class="card-text category">Running</h3>
+          </div>
+        </div>
+      </section>
 
-    <section class="shop_category">
-    </section>
 
-    <section class="outro">
-    </section>
-
+      <section class="outro">
+      </section>
+    </main>
   </body>
 </html>
