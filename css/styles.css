@@ -76,6 +76,7 @@ font-face {
 }
 
 /* -- Global styles -- */
+<<<<<<< HEAD
 html,
 body {
   margin: 0;
@@ -97,6 +98,16 @@ h3 {
   font-family: "museo-sans", Arial, Helvetica, sans-serif;
   font-weight: 500;
 }
+=======
+body {
+  font-family: "museo-sans";
+}
+
+h1 {
+  font-family: "museo-slab";
+  font-weight: 800;
+}
+>>>>>>> 74627bc48d781edbefa6c7a9c2b358aa2f3a3889
 
 .p1 {
   font-family: "museo-sans", Arial, Helvetica, sans-serif;
@@ -118,12 +129,24 @@ img {
 /* -- Header & Footer -- */
 
 /* -------- Header --------*/
+<<<<<<< HEAD
+=======
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+>>>>>>> 74627bc48d781edbefa6c7a9c2b358aa2f3a3889
 header {
   align-items: center;
   background-color: #f4f2ed;
   height: 225px;
   text-align: center;
+<<<<<<< HEAD
   padding-bottom: 20px;
+=======
+>>>>>>> 74627bc48d781edbefa6c7a9c2b358aa2f3a3889
 }
 
 nav {
@@ -134,13 +157,22 @@ nav {
 }
 
 #logo {
+<<<<<<< HEAD
   margin: 20px auto 30px;
   max-width: 250px;
+=======
+  margin: 50px auto;
+  max-width: 150px;
+>>>>>>> 74627bc48d781edbefa6c7a9c2b358aa2f3a3889
 }
 
 .nav-items {
   padding: 5px;
+<<<<<<< HEAD
   font-size: 16px;
+=======
+  font-size: 14px;
+>>>>>>> 74627bc48d781edbefa6c7a9c2b358aa2f3a3889
   text-decoration: none;
   color: #053541;
   margin: 0 auto;
@@ -161,7 +193,11 @@ nav {
 /* Intro */
 
 .intro {
+<<<<<<< HEAD
   background-image: url(../images/hiking_1600w_v2.jpg);
+=======
+  background-image: url(../images/hiking_desktop.jpg);
+>>>>>>> 74627bc48d781edbefa6c7a9c2b358aa2f3a3889
   background-size: cover;
   background-repeat: no-repeat;
   background-position-x: center;
@@ -169,6 +205,7 @@ nav {
   min-height: 60vh;
   position: relative;
 }
+<<<<<<< HEAD
 
 .intro div {
   color: #053541;
@@ -176,6 +213,84 @@ nav {
   max-width: 530px;
   margin: 0 auto;
 }
+=======
+
+.intro div {
+  text-align: center;
+  color: #053541;
+  padding: 80px 20px;
+  max-width: 530px;
+  margin: 0 auto;
+}
+
+.intro_heading {
+  font-size: 32px;
+}
+
+.p2 {
+  font-family: "museo-sans";
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.4rem;
+}
+
+/* -- Category woman & men -- */
+
+.category-container {
+  position: relative;
+  top: 24px;
+}
+
+.categories {
+  padding: 20px;
+  margin: -230px auto;
+}
+
+/* .men {
+  position: relative;
+  top: -130px;
+  margin: 0 auto;
+  
+} */
+
+/* 
+.women {
+  position: relative;
+  top: -130px;
+} */
+
+.categories women:nth-child(1) {
+  width: 327px;
+}
+
+.categories men:nth-child(2) {
+  width: 327px;
+}
+
+.select_img {
+  max-height: 60vw;
+}
+
+.category_text {
+  font-family: "museo slab";
+  position: relative;
+  color: white;
+  top: 120px;
+  left: 40px;
+  font-size: 48px;
+}
+
+.shopnow {
+  position: relative;
+  color: white;
+  top: -80px;
+  left: 50px;
+  font-size: 24px;
+}
+/* -- News jackets 
+.news_jackets
+-- */
+>>>>>>> 74627bc48d781edbefa6c7a9c2b358aa2f3a3889
 
 .intro_heading {
   font-size: 48px;
@@ -267,6 +382,7 @@ nav {
   label {
     display: none;
   }*/
+<<<<<<< HEAD
 
   .nav-items {
     font-size: 12px;
@@ -283,10 +399,16 @@ nav {
   h3 {
     font-size: 20px;
   }
+=======
+  .nav-items {
+    font-size: 12px;
+  }
+>>>>>>> 74627bc48d781edbefa6c7a9c2b358aa2f3a3889
 }
 
 /* tablet styles*/
 @media (min-width: 481px) and (max-width: 799px) {
+<<<<<<< HEAD
   .category-container,
   .new-arrivals,
   .shop_category_container {
@@ -296,14 +418,19 @@ nav {
   h3 {
     font-size: 24px;
   }
+=======
+>>>>>>> 74627bc48d781edbefa6c7a9c2b358aa2f3a3889
 }
 
 /* desktop styles*/
 @media (min-width: 800px) {
+<<<<<<< HEAD
   .intro {
     min-height: 70vh;
   }
 
+=======
+>>>>>>> 74627bc48d781edbefa6c7a9c2b358aa2f3a3889
   .intro_heading {
     font-size: 68px;
     width: 600px;
@@ -317,10 +444,16 @@ nav {
     font-size: 24px;
     line-height: 2.3rem;
   }
+<<<<<<< HEAD
   .category-container,
   .new-arrivals,
   .shop_category_container {
     max-width: 800px;
     margin: 0 auto;
+=======
+
+  .categories {
+    flex-direction: column;
+>>>>>>> 74627bc48d781edbefa6c7a9c2b358aa2f3a3889
   }
 }
