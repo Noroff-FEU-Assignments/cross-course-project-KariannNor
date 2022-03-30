@@ -133,6 +133,7 @@ nav {
   justify-items: center;
 }
 
+
 #logo {
   margin: 20px auto 30px;
   max-width: 250px;
@@ -145,6 +146,11 @@ nav {
   color: #053541;
   margin: 0 auto;
 }
+
+.fa-solid {
+  margin-left: 20px;
+}
+
 
 /*
 #hamburger-menu {
@@ -184,10 +190,7 @@ nav {
 
 /* -- Category woman & men -- */
 
-/* .category-container {
-  position: relative;
-  top: 24px;
-} */
+
 
 .categories {
   display: flex;
@@ -271,6 +274,12 @@ nav {
   .nav-items {
     font-size: 12px;
   }
+
+  .fa-solid {
+    margin: 0 5px ;
+    line-height: 0.7rem;
+  }
+  
   .intro_heading {
     font-size: 32px;
   }
@@ -280,9 +289,46 @@ nav {
     background-position-y: bottom;
   }
 
+ .intro div {
+  padding: 25px 40px;
+  text-align: center;
+ }
+
+
   h3 {
     font-size: 20px;
   }
+
+ .category {
+   margin: -20px auto -155px auto;
+ }
+
+  .categories {
+  flex-direction: column;
+  gap: none;
+  margin: -70px auto -50px;
+  padding: 20px;
+  }
+
+.new-arrivals {
+  margin: 150px auto;
+}
+
+.products {
+  flex-direction: column;
+}
+
+.shop_category_container {
+  margin: -120px auto;
+}
+
+.category_cards {
+  flex-direction: column;
+  line-height: 0.5rem;
+  row-gap: 20px;
+}
+
+
 }
 
 /* tablet styles*/
@@ -295,6 +341,17 @@ nav {
   }
   h3 {
     font-size: 24px;
+  }
+.intro_heading {
+  line-height: 3rem;
+}
+  .intro div {
+    padding: 10px 100px;
+    text-align: center;
+  }
+
+  .p2{
+    margin: -20px auto;
   }
 }
 
