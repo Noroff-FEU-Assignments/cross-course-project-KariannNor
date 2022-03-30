@@ -123,6 +123,7 @@ header {
   background-color: #f4f2ed;
   height: 225px;
   text-align: center;
+  padding-bottom: 20px;
 }
 
 nav {
@@ -133,8 +134,8 @@ nav {
 }
 
 #logo {
-  margin: 50px auto;
-  max-width: 150px;
+  margin: 20px auto 30px;
+  max-width: 250px;
 }
 
 .nav-items {
