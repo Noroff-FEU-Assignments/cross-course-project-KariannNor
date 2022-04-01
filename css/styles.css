@@ -200,7 +200,6 @@ footer {
   background-color: #053541;
   height: 100%;
   text-align: center;
-  
 }
 
 .footer_nav {
@@ -368,6 +367,7 @@ footer {
 /* mobile styles*/
 @media (max-width: 480px) {
   /* -------- Header -------- */
+
   .fa-cart-shopping {
     font-size: 15px;
   }
@@ -377,6 +377,10 @@ footer {
   }
   .nav-items {
     font-size: 12px;
+  }
+
+  .intro {
+    background-image: url(../images/hiking_800w.jpg);
   }
 
   .fa-solid {
@@ -439,14 +443,15 @@ footer {
   }
 
   .footer_some {
-    margin: -237px 3px 11px;
+    text-align: left;
+    margin: -250px 30px 0px;
   }
   .nav-items.footer {
     font-size: 14px;
   }
   .footer_some img {
     max-width: 30px;
-    padding: 15px 10px 5px 5px;
+    padding: 15px 10px 5px 0px;
   }
 }
 /* tablet styles*/
