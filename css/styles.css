@@ -192,16 +192,6 @@ nav {
   color: #053541;
 }
 
-/*
-#hamburger-menu {
-  display: none;
-}
-
-#hamburger-menu:checked ~ nav {
-  display: block;
-}
-*/
-
 /* -------- Footer -------- */
 
 footer {
@@ -210,6 +200,7 @@ footer {
   background-color: #053541;
   height: 100%;
   text-align: center;
+  
 }
 
 .footer_nav {
@@ -219,7 +210,6 @@ footer {
 }
 
 .footer {
-  display: flex;
   color: #ffffff;
   display: flex;
   margin: 25px 20px 25px 30px;
@@ -244,6 +234,8 @@ footer {
   max-width: 30px;
   padding: 20px 30px 20px 0px;
 }
+
+/* -- footer grid test -- */
 
 /* Intro */
 
@@ -376,10 +368,10 @@ footer {
 /* mobile styles*/
 @media (max-width: 480px) {
   /* -------- Header -------- */
-  /*input,
-  label {
-    display: none;
-  }*/
+  .fa-cart-shopping {
+    font-size: 15px;
+  }
+
   a:hover {
     display: none;
   }
