@@ -119,8 +119,9 @@ img {
 /* -- links & buttons -- */
 
 nav .active {
-  background-color: #ffffff;
-  font-weight: 500;
+  text-decoration: underline;
+  /* background-color: #ffffff;
+  font-weight: 500; */
 }
 
 a {
@@ -372,9 +373,9 @@ footer {
     font-size: 15px;
   }
 
-  a:hover {
+  /* a:hover {
     display: none;
-  }
+  } */
   .nav-items {
     font-size: 14px;
   }
