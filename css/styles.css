@@ -78,6 +78,7 @@ font-face {
 /* -- Global styles -- */
 html,
 body {
+  font-family: "museo-sans", Arial, Helvetica, sans-serif;
   margin: 0;
   padding: 0;
 }
