@@ -339,7 +339,7 @@ footer {
 .outro {
   display: flex;
   padding: 20px;
-  margin: 40px auto;
+  margin: 40px auto -200px;
 }
 
 .newsletter .titles {
@@ -363,7 +363,7 @@ footer {
   background-position-x: left;
   background-position-y: bottom;
   min-height: 30vh;
-  position: relative;
+  margin: 10px 0px;
 }
 
 /* mobile styles*/
