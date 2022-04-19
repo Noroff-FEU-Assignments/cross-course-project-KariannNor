@@ -182,7 +182,7 @@ nav {
 
 .nav-items {
   padding: 5px;
-  font-size: 16px;
+  font-size: 18px;
   text-decoration: none;
   color: #053541;
   margin: 0 auto;
@@ -281,7 +281,7 @@ footer {
   position: relative;
   color: white;
   top: 120px;
-  left: 40px;
+  padding-left: 20px;
   font-size: 48px;
 }
 
@@ -289,7 +289,7 @@ footer {
   position: relative;
   color: white;
   top: -80px;
-  left: 50px;
+  padding-left: 20px;
   font-size: 24px;
 }
 /* -- New arrivals -- */
@@ -304,7 +304,7 @@ footer {
   font-size: 32px;
   line-height: 1.5rem;
   top: 0;
-  left: 10px;
+  margin: 10px 10px;
 }
 
 .products {
