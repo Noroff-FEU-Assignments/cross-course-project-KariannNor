@@ -1,0 +1,35 @@
+/* Who we are */
+
+section {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  margin: 40px;
+  grid-gap: 20px;
+  grid-template-areas:
+    "about about picsone picstwo"
+    "about about newsletter newsletter";
+}
+
+h1 {
+  color: #053541;
+}
+
+.newsletter.about {
+  padding: 30px;
+  margin: 0;
+}
+
+.about_text {
+  grid-area: about;
+}
+.about_pics_one {
+  grid-area: picsone;
+}
+
+.about_pics_two {
+  grid-area: picstwo;
+}
+.newsletter.about {
+  grid-area: newsletter;
+}

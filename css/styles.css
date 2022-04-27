@@ -18,6 +18,8 @@ p4 museo sans 700 12pt
 ___
 
 */
+@import "/css/imports/products.css";
+@import "/css/imports/rainydays.css";
 
 @font-face {
   font-family: "museo-sans";
@@ -149,6 +151,7 @@ a:hover {
   background-color: #257ea1;
   color: #ffffff;
   font-weight: 700;
+  text-decoration: none;
 }
 
 .cta_newsletter:active {
@@ -156,8 +159,6 @@ a:hover {
   color: #ffffff;
   font-weight: 700;
 }
-
-/* -- Header & Footer -- */
 
 /* -------- Header --------*/
 header {
@@ -227,7 +228,6 @@ footer {
 
 .some_text {
   color: #ffffff;
-  font-family: "museo-sans", Arial, Helvetica, sans-serif;
   font-size: 24px;
   font-weight: 300;
   text-align: left;
@@ -238,8 +238,6 @@ footer {
   max-width: 30px;
   padding: 20px 30px 20px 0px;
 }
-
-/* -- footer grid test -- */
 
 /* Intro */
 
@@ -308,13 +306,9 @@ footer {
 }
 
 .products {
-  display: flex;
   gap: 20px;
-  padding: 10px;
-}
-
-.product .p1 {
-  line-height: 0.5rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
 }
 
 /* -- Shop by category -- */
@@ -325,7 +319,8 @@ footer {
 }
 
 .category_cards {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
   gap: 20px;
   padding: 10px;
 }
@@ -349,7 +344,7 @@ footer {
   color: #257ea1;
 }
 .newsletter .p1 {
-  padding: 0px 80px;
+  padding: 0px 50px;
   margin-bottom: 50px;
 }
 
@@ -427,7 +422,8 @@ footer {
   }
 
   .products {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
   }
 
   .shop_category_container {
@@ -435,7 +431,8 @@ footer {
   }
 
   .category_cards {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
     line-height: 0.5rem;
     row-gap: 20px;
   }
@@ -459,6 +456,7 @@ footer {
     padding: 15px 10px 5px 0px;
   }
 }
+
 /* tablet styles*/
 @media (min-width: 481px) and (max-width: 799px) {
   .category-container,
