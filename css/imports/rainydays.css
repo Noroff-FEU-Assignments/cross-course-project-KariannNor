@@ -1,28 +1,38 @@
 /* Who we are */
 
-section {
+.about_section {
+  max-width: 800px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  margin: 40px;
+  grid-template-rows: auto auto;
+  margin: 40px auto;
   grid-gap: 20px;
   grid-template-areas:
     "about about picsone picstwo"
-    "about about newsletter newsletter";
+    "founders founders newsletter newsletter";
 }
 
-h1 {
+.about_title {
   color: #053541;
+  margin: -5px 0px 25px 0px;
+}
+.about_text + .p1 {
+  line-height: 1.2em;
 }
 
 .newsletter.about {
-  padding: 30px;
+  padding: 0 20px 35px 20px;
   margin: 0;
 }
 
 .about_text {
   grid-area: about;
 }
+
+.founders {
+  grid-area: founders;
+}
+
 .about_pics_one {
   grid-area: picsone;
 }
@@ -32,4 +42,91 @@ h1 {
 }
 .newsletter.about {
   grid-area: newsletter;
+}
+
+/* Contact */
+.contact_section {
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto auto;
+  margin: 40px auto;
+  grid-gap: 20px;
+  grid-template-areas:
+    "about founders"
+    "form newsletter";
+}
+
+.contact_title {
+  color: #053541;
+  margin: -5px 0px 25px 0px;
+}
+
+.contact_text {
+  grid-area: about;
+}
+
+.contact_form {
+  grid-area: form;
+}
+.founders {
+  grid-area: founders;
+}
+
+.newsletter.about {
+  grid-area: newsletter;
+}
+
+.divider {
+  border-top: solid 1px #f2a766;
+  width: 100%;
+  margin: 50px auto;
+}
+
+.cta_contact {
+  display: inline-flex;
+  color: #01893b;
+  border-style: solid;
+  font-size: 16px;
+  font-weight: 300;
+  text-decoration: none;
+  padding: 10px 80px;
+  margin: 20px 0 10px 0;
+  font-variant: small-caps;
+}
+
+.cta_contact:hover {
+  background-color: #01893b;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.cta_contact:active {
+  background-color: #01893b;
+  color: #ffffff;
+}
+
+.h3 {
+  font-family: "museo-sans", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 24px;
+}
+
+.wrapper {
+  margin-top: -50px;
+}
+
+.form__contact {
+  display: block;
+  margin: 5px 0;
+  width: 100%;
+  min-height: 25px;
+  border: solid 1px #257ea1;
+}
+
+textarea {
+  font-family: "museo-sans", Arial, Helvetica, sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+  padding: 5px;
 }

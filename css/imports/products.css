@@ -1,3 +1,5 @@
+/* women & mens page */
+
 .crumbs {
   margin: 5px 10px 5px 40px;
 }
@@ -97,29 +99,105 @@
   border: solid 1px #878787;
 }
 
-/* tablet styles*/
-@media (min-width: 481px) and (max-width: 619px) {
-  .product_intro,
-  .featured_products {
-    max-width: 600px;
-    margin: 0 auto;
-  }
-  .p1_strong {
-    padding-bottom: 16px;
-  }
+/* Jacket specific */
 
-  .products {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    padding: 10px;
-    grid-gap: 10px;
-  }
+.product_description {
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  margin: 40px auto;
+  grid-gap: 20px;
+  grid-template-areas:
+    "product_one product_one product_text product_text"
+    "product_one product_one product_text product_text"
+    "product_two product_two product_text product_text"
+    "product_two product_two description_text description_text"
+    "product_three product_four description_text description_text";
 }
 
-/* @media (min-width: 620px) and (max-width: 799px) {
-  .products {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+.product_one {
+  grid-area: product_one;
+}
+.product_two {
+  grid-area: product_two;
+}
+.product_three {
+  grid-area: product_three;
+}
+.product_four {
+  grid-area: product_four;
+}
 
-  }
-} */
+.product_text {
+  grid-area: product_text;
+}
+
+.description_text {
+  grid-area: description_text;
+}
+
+.title_price_rating {
+  margin: -23px 10px 0 0;
+}
+
+.subtitle {
+  font-family: "museo-slab", Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 1.4rem;
+  color: #053541;
+}
+
+.fa-star,
+.fa-star-half-stroke {
+  margin-left: 10px 5px 5px 0;
+  color: #053541;
+  font-size: 16px;
+}
+.rating {
+  font-size: 14px;
+  font-weight: 300;
+  color: #053541;
+  text-decoration: underline;
+  margin: 0px 10px 10px 0;
+}
+
+.color_section {
+  margin: 50px 0 0 0;
+}
+
+.color_section > .p1 {
+  margin: 0 0 5px 0;
+}
+
+.color {
+  margin: 0 10px 0 0;
+}
+
+.size {
+  display: inline-block;
+  border: solid 1px #257ea1;
+  padding: 10px 10px;
+  margin: 20px 10px 5px 0;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.size:hover {
+  background-color: #257ea1;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.size:active {
+  background-color: #257ea1;
+  color: #ffffff;
+}
+
+.quantity > .inline {
+  display: inline-block;
+}
+.quantity > .p1 {
+  margin: 10px 0 -16px 0;
+}
