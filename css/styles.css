@@ -91,6 +91,11 @@ body {
   font-size: 1.5rem;
 }
 
+main {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
 h1,
 h2 {
   font-family: "museo-slab", Arial, Helvetica, sans-serif;
@@ -159,6 +164,16 @@ a:hover {
   background-color: #257ea1;
   color: #ffffff;
   font-weight: 700;
+}
+
+.crumbs {
+  margin: 5px 10px 5px 0px;
+}
+
+.crumbs_nav {
+  display: inline-flex;
+  font-size: 12px;
+  font-weight: 300;
 }
 
 /* -------- Header --------*/
@@ -389,6 +404,11 @@ footer {
     line-height: 0.7rem;
   }
 
+  .crumbs {
+    margin: 5px 10px 5px 0px;
+    padding: 0 20px;
+  }
+
   .intro_heading {
     font-size: 32px;
   }
@@ -476,10 +496,61 @@ footer {
     margin-bottom: -125px;
     padding: 20px;
   }
+
+  /* Product page - YUKON jacket */
+  .product_description {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: 1fr;
+    padding: 10px;
+    grid-gap: 30px;
+    grid-template-areas:
+      "product_one"
+      "product_text"
+      "description_text"
+      "product_two"
+      "product_three"
+      "product_four";
+    margin: 10px 10px 10px 10px;
+    padding: 20px 10px 10px 10px;
+  }
+
+  .product_four {
+    margin-bottom: 50px;
+  }
+
+  /* shopping cart */
+  .shoppingcart {
+    justify-items: left;
+    display: grid;
+    gap: 30px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "summary_title"
+      "billing"
+      "payment";
+  }
+  .divider_small.hidden {
+    border-top: solid 1px #f2a766;
+    margin: 50px 0 30px 0;
+  }
+  /* popup */
+  .card {
+    visibility: hidden;
+    background-color: #ffffff;
+    opacity: 0;
+  
+  }
+
+  .card:target {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 /* tablet styles*/
-@media (min-width: 481px) and (max-width: 799px) {
+@media (min-width: 481px) and (max-width: 768px) {
   .category-container,
   .new-arrivals,
   .shop_category_container {
@@ -489,6 +560,11 @@ footer {
 
   h3 {
     font-size: 24px;
+  }
+
+  .crumbs {
+    margin: 5px 10px 5px 0px;
+    padding: 0 20px;
   }
 
   .intro_heading {
@@ -554,10 +630,63 @@ footer {
     margin-bottom: -125px;
     padding: 40px;
   }
+
+  /* Product page - YUKON jacket */
+  .product_description {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    grid-template-areas:
+      "product_one"
+      "product_text"
+      "description_text"
+      "product_two"
+      "product_three"
+      "product_four";
+    margin: 20px 10px 20px 10px;
+    padding: 20px 10px 10px 10px;
+  }
+
+  .product_four {
+    margin-bottom: 50px;
+  }
+
+  /* shopping cart */
+  .shoppingcart {
+    justify-items: left;
+    display: grid;
+    gap: 30px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "summary_title"
+      "billing"
+      "payment";
+  }
+
+  .divider_small.hidden {
+    border-top: solid 1px #f2a766;
+    margin: 50px 0 30px 0;
+  }
+
+  /* popup */
+  .card {
+    visibility: hidden;
+    background-color: #ffffff;
+    opacity: 0;
+    margin: -30px auto;
+    padding: 20px 20px 50px 20px;
+  }
+
+  .card:target {
+    visibility: visible;
+    opacity: 1;
+  }
 }
 
 /* desktop styles*/
-@media (min-width: 800px) {
+@media (min-width: 769px) {
   .intro {
     min-height: 70vh;
   }
@@ -582,5 +711,11 @@ footer {
   .shop_category_container {
     max-width: 800px;
     margin: 0 auto;
+  }
+
+  /* Product page - YUKON jacket */
+  .product_description {
+    margin: 10px 10px 10px 10px;
+    padding: 20px 20px;
   }
 }

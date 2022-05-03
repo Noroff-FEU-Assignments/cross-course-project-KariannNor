@@ -5,7 +5,7 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   grid-template-rows: auto auto;
-  margin: 40px auto;
+  margin: 30px auto;
   grid-gap: 20px;
   grid-template-areas:
     "about about picsone picstwo"
@@ -50,7 +50,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto auto;
-  margin: 40px auto;
+  margin: 30px auto;
   grid-gap: 20px;
   grid-template-areas:
     "about founders"
@@ -129,4 +129,254 @@ textarea {
   font-weight: 300;
   font-size: 12px;
   padding: 5px;
+}
+
+/* Order Summary */
+
+.fa-x {
+  margin: 20px 0 40px 0;
+  font-size: 16px;
+  transition: transform 250ms, opacity 400ms;
+}
+
+.fa-x:hover {
+  transform: scale(1.3);
+  color: #c4504d;
+}
+
+.summary {
+  background-color: #f4f2ed;
+  width: 300px;
+  margin: 20px auto;
+  padding: 20px 20px 50px 20px;
+}
+
+.summary_title {
+  margin: 0 20px;
+}
+
+.p3 {
+  font-size: 12px;
+}
+
+.divider_small {
+  border-top: solid 1px #f2a766;
+  margin: 0px 0 30px 0;
+}
+
+.divider_small.hidden {
+  border: hidden;
+}
+
+.quantity_summary > .inline {
+  display: inline-block;
+}
+.quantity_summary > .p1 {
+  margin: 10px 0 -16px 0;
+}
+
+.quantity_summary {
+  margin: 30px 0 30px 0;
+}
+
+.edit_remove {
+  display: inline-flex;
+  align-items: center;
+  margin: 0 0 30px 0;
+}
+
+.remove,
+.remove_or {
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 1.4rem;
+  padding-right: 15px;
+}
+
+.remove {
+  text-decoration: underline;
+  color: #f2a766;
+}
+
+.remove:hover {
+  color: black;
+}
+
+.or {
+  margin: 30px 20px;
+  text-align: center;
+}
+
+.cta_continue {
+  background-color: #c4504d;
+  color: #ffffff;
+  border-style: solid;
+  font-size: 16px;
+  font-weight: 300;
+  font-variant: small-caps;
+  text-decoration: none;
+  padding: 15px 80px;
+  text-align: center;
+  margin: 10px 10px 10px 0;
+  size: 100%;
+}
+
+.cta_continue:hover {
+  background-color: #f2a766;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.cta_continue:active {
+  background-color: #c4504d;
+  color: #ffffff;
+}
+
+.cta_checkout {
+  background-color: #01893b;
+  color: #ffffff;
+  border-style: solid;
+  font-size: 16px;
+  font-weight: 300;
+  font-variant: small-caps;
+  text-decoration: none;
+  padding: 15px 110px;
+  text-align: center;
+  margin: 10px 10px 10px 0;
+  size: 100%;
+}
+
+.cta_checkout:hover {
+  background-color: #f2a766;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.cta_checkout:active {
+  background-color: #c4504d;
+  color: #ffffff;
+}
+
+/* popup */
+
+#popup {
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+}
+
+.summary {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.summary:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+.card {
+  position: fixed;
+  visibility: hidden;
+  background-color: #ffffff;
+  opacity: 0;
+  margin: -30px auto;
+  padding: 20px 20px 50px 20px;
+}
+
+.card:target {
+  visibility: visible;
+  opacity: 1;
+}
+
+/* shopping cart */
+
+.fa-solid.active {
+  text-decoration: none;
+}
+.fa-solid.active:hover {
+  color: #f2a766;
+  text-decoration: none;
+}
+
+.shoppingcart {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto;
+  margin: 40px 20px;
+  grid-gap: 20px;
+  justify-items: center;
+  grid-template-areas: "summary_title billing payment";
+}
+
+.summary_title {
+  grid-area: summary_title;
+}
+.billing {
+  grid-area: billing;
+}
+.payment {
+  grid-area: payment;
+}
+
+.p1.fields {
+  margin-top: -10px;
+  font-size: 12px;
+  font-style: oblique;
+}
+
+.form__billing {
+  display: block;
+  margin: 5px 0;
+  width: 100%;
+  min-height: 25px;
+  border-bottom: solid 1px #257ea1;
+  border-top: 0;
+  border-left: 0;
+  border-right: 0;
+}
+
+.billing {
+  margin: 0 20px;
+}
+
+.payment {
+  margin: 0 20px;
+}
+
+.select_payment {
+  border-collapse: separate;
+  border-spacing: 0 50px;
+}
+
+.select {
+  font-size: 14px;
+  color: #ffffff;
+  border: solid 1px #257ea1;
+  margin: 20px auto;
+  text-align: center;
+  padding: 20px 80px;
+  background-color: #257ea1;
+}
+
+.select:hover {
+  background-color: #053541;
+  text-decoration: none;
+}
+
+.select:active {
+  background-color: #01893b;
+  text-decoration: none;
+}
+
+.card_cta {
+  margin: 50px 0 5px 0;
+}
+
+ol {
+  list-style: none;
+  margin: 0 0 0 -40px;
+}
+
+li {
+  margin-bottom: 20px;
 }

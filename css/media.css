@@ -92,7 +92,7 @@
 }
 
 /* tablet styles*/
-@media (min-width: 481px) and (max-width: 799px) {
+@media (min-width: 481px) {
   .category-container,
   .new-arrivals,
   .shop_category_container {

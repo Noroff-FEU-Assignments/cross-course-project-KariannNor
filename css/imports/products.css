@@ -1,22 +1,12 @@
 /* women & mens page */
 
-.crumbs {
-  margin: 5px 10px 5px 40px;
-}
-
-.crumbs_nav {
-  display: inline-flex;
-  font-size: 12px;
-  font-weight: 300;
-}
-
 .active {
   text-decoration: underline;
 }
 
 .product_intro {
-  padding: 20px;
-  margin: 10px auto;
+  padding: 0 20px;
+  margin: 0 auto;
   max-width: 800px;
 }
 
@@ -55,7 +45,6 @@
 }
 
 .featured_products {
-  padding: 20px;
   margin: 0px auto;
   max-width: 800px;
 }
@@ -104,16 +93,16 @@
 .product_description {
   max-width: 800px;
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(5, 1fr);
+  grid-template-columns: repeat(2, 1fr);
   margin: 40px auto;
   grid-gap: 20px;
   grid-template-areas:
-    "product_one product_one product_text product_text"
-    "product_one product_one product_text product_text"
-    "product_two product_two product_text product_text"
-    "product_two product_two description_text description_text"
-    "product_three product_four description_text description_text";
+    "product_one product_text"
+    "product_one product_text"
+    "product_two product_text"
+    "product_two product_text"
+    "product_three description_text"
+    "product_four description_text";
 }
 
 .product_one {
@@ -136,6 +125,7 @@
 .description_text {
   grid-area: description_text;
 }
+
 
 .title_price_rating {
   margin: -23px 10px 0 0;
@@ -200,4 +190,43 @@
 }
 .quantity > .p1 {
   margin: 10px 0 -16px 0;
+}
+
+.quantity {
+  margin-top: 50px;
+}
+
+.cta_add {
+  display: inline-flex;
+  background-color: #c4504d;
+  color: #ffffff;
+  border-style: solid;
+  font-size: 16px;
+  font-weight: 300;
+  font-variant: small-caps;
+  text-decoration: none;
+  padding: 10px 110px;
+  margin-bottom: 30px;
+}
+
+.cta_add:hover {
+  background-color: #f2a766;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.cta_add:active {
+  background-color: #c4504d;
+  color: #ffffff;
+}
+
+.returns {
+  margin: 50px auto;
+  padding: 100px 50px;
+}
+
+.product_description img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
 }
