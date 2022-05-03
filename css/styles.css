@@ -92,7 +92,7 @@ body {
 }
 
 main {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
 }
 
@@ -123,6 +123,7 @@ h3 {
 
 img {
   width: 100%;
+  height: auto;
 }
 
 /* -- links & buttons -- */
@@ -540,7 +541,6 @@ footer {
     visibility: hidden;
     background-color: #ffffff;
     opacity: 0;
-  
   }
 
   .card:target {
