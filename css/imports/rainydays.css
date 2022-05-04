@@ -151,10 +151,6 @@ textarea {
   padding: 20px 20px 50px 20px;
 }
 
-.summary_title {
-  margin: 0 20px;
-}
-
 .p3 {
   font-size: 12px;
 }
@@ -215,7 +211,7 @@ textarea {
   font-weight: 300;
   font-variant: small-caps;
   text-decoration: none;
-  padding: 15px 80px;
+  padding: 10px 80px;
   text-align: center;
   margin: 10px 10px 10px 0;
   size: 100%;
@@ -240,7 +236,7 @@ textarea {
   font-weight: 300;
   font-variant: small-caps;
   text-decoration: none;
-  padding: 15px 110px;
+  padding: 10px 110px;
   text-align: center;
   margin: 10px 10px 10px 0;
   size: 100%;
@@ -305,20 +301,23 @@ textarea {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
-  margin: 40px 20px;
-  grid-gap: 20px;
+  margin: 20px 40px;
+  grid-gap: 40px;
   justify-items: center;
   grid-template-areas: "summary_title billing payment";
 }
 
 .summary_title {
   grid-area: summary_title;
+  width: 100%;
 }
 .billing {
   grid-area: billing;
+  width: 100%;
 }
 .payment {
   grid-area: payment;
+  width: 100%;
 }
 
 .p1.fields {
@@ -338,26 +337,18 @@ textarea {
   border-right: 0;
 }
 
-.billing {
-  margin: 0 20px;
-}
-
-.payment {
-  margin: 0 20px;
-}
-
 .select_payment {
   border-collapse: separate;
-  border-spacing: 0 50px;
+  border-spacing: 0 30px;
 }
 
 .select {
   font-size: 14px;
   color: #ffffff;
   border: solid 1px #257ea1;
-  margin: 20px auto;
+  margin: 10px auto;
   text-align: center;
-  padding: 20px 80px;
+  padding: 10px 80px;
   background-color: #257ea1;
 }
 
@@ -382,4 +373,80 @@ ol {
 
 li {
   margin-bottom: 20px;
+}
+
+/* checkout */
+
+.shoppingcart.checkout {
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  margin: 20px auto;
+  padding: 0 40px;
+  grid-gap: 40px;
+  justify-items: center;
+  grid-template-areas: "summary_title place_order";
+}
+
+.place_order {
+  grid-area: place_order;
+  width: 240px;
+  height: 400px;
+  background-color: #f4f2ed;
+  margin: 30px 30px;
+  padding: 30px 30px;
+}
+
+.fa-cc-visa {
+  font-size: 35px;
+  margin-right: 20px;
+}
+
+.submit_order {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+/* Success */
+
+.fa-check {
+  color: #01893b;
+  font-size: 50px;
+}
+
+.check_mark {
+  width: 320px;
+  margin: 10px auto -40px;
+  text-align: center;
+}
+
+.success_text {
+  margin: 0 auto;
+  padding: 10px;
+  width: 320px;
+}
+.succsess_title {
+  font-size: 50px;
+  font-weight: 300;
+  color: #01893b;
+  text-align: center;
+}
+.p2.success {
+  font-size: 24px;
+  line-height: 2rem;
+  text-align: center;
+}
+
+.success {
+  margin: 40px auto;
+}
+
+.t_number {
+  text-decoration: underline;
+  margin: -10px 0 20px 0;
+}
+.last {
+  margin: 0 0 -10px 0;
 }

@@ -1,95 +1,3 @@
-/* mobile styles*/
-@media (max-width: 480px) {
-  /* -------- Header -------- */
-
-  .fa-cart-shopping {
-    font-size: 15px;
-  }
-
-  /* a:hover {
-      display: none;
-    } */
-  .nav-items {
-    font-size: 14px;
-  }
-
-  .intro {
-    background-image: url(../images/hiking_800w.jpg);
-  }
-
-  .fa-solid {
-    margin: 0 5px;
-    line-height: 0.7rem;
-  }
-
-  .intro_heading {
-    font-size: 32px;
-  }
-  .intro {
-    min-height: 45vh;
-    background-position-x: center;
-    background-position-y: bottom;
-  }
-
-  .intro div {
-    padding: 25px 40px;
-    text-align: center;
-  }
-
-  .card-text {
-    font-size: 20px;
-  }
-
-  .category {
-    margin: -20px auto -155px auto;
-  }
-
-  .categories {
-    flex-direction: column;
-    gap: none;
-    margin: -70px auto -50px;
-    padding: 20px;
-  }
-
-  .new-arrivals {
-    margin: 150px auto;
-  }
-
-  .products {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .shop_category_container {
-    margin: -120px auto;
-  }
-
-  .category_cards {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    line-height: 0.5rem;
-    row-gap: 20px;
-  }
-  .newsletter {
-    margin: 100px auto;
-  }
-
-  .footer_nav {
-    max-width: 160px;
-  }
-
-  .footer_some {
-    text-align: left;
-    margin: -250px 30px 0px;
-  }
-  .nav-items.footer {
-    font-size: 14px;
-  }
-  .footer_some img {
-    max-width: 30px;
-    padding: 15px 10px 5px 0px;
-  }
-}
 
 /* tablet styles*/
 @media (min-width: 481px) {
@@ -144,6 +52,152 @@
     grid-template-columns: repeat(2, 1fr);
     padding: 10px;
     grid-gap: 10px;
+  }
+
+  .category-container,
+  .new-arrivals,
+  .shop_category_container {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  .crumbs {
+    margin: 5px 10px 5px 20px;
+    padding: 0 20px;
+  }
+
+  .intro_heading {
+    line-height: 3rem;
+  }
+
+  .intro div {
+    padding: 10px 100px;
+    text-align: center;
+  }
+
+  .p2 {
+    margin: 10px auto;
+  }
+
+  /* .p1 {
+      line-height: 1rem;
+    } */
+
+  .newsletter {
+    margin: 0px auto;
+  }
+
+  .cta {
+    padding: 12px 50px;
+  }
+
+  /* product site */
+  .product_intro,
+  .featured_products {
+    max-width: 600px;
+    margin: 0 auto;
+  }
+  .p1_strong {
+    padding-bottom: 16px;
+  }
+
+  .products {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 10px;
+    grid-gap: 10px;
+  }
+
+  /* who we are */
+  .about_section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px;
+    grid-gap: 30px;
+    grid-template-areas: "about" "founders" "newsletter" "picsone" "picstwo";
+    margin-bottom: -125px;
+    padding: 20px;
+  }
+
+  /* Contact */
+  .contact_section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px;
+    grid-gap: 30px;
+    grid-template-areas: "about" "form" "founders" "newsletter";
+    margin-bottom: -125px;
+    padding: 40px;
+  }
+
+  /* Product page - YUKON jacket */
+  .product_description {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: 1fr;
+    grid-gap: 30px;
+    grid-template-areas:
+      "product_one"
+      "product_text"
+      "description_text"
+      "product_two"
+      "product_three"
+      "product_four";
+    margin: 20px 10px 20px 10px;
+    padding: 20px 10px 10px 10px;
+  }
+
+  .product_four {
+    margin-bottom: 50px;
+  }
+
+  /* shopping cart */
+  .shoppingcart {
+    justify-items: left;
+    display: grid;
+    gap: 30px;
+    margin: 40px 40px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "summary_title"
+      "billing"
+      "payment";
+  }
+
+  .divider_small.hidden {
+    border-top: solid 1px #f2a766;
+    margin: 50px 0 30px 0;
+  }
+
+  /* popup */
+  .card {
+    visibility: hidden;
+    background-color: #ffffff;
+    opacity: 0;
+    margin: -30px auto;
+    padding: 20px 20px 50px 20px;
+  }
+
+  .card:target {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  /* checkout */
+  .shoppingcart.checkout {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: 1fr;
+    margin: 20px auto;
+    padding: 0 40px;
+    grid-gap: 40px;
+    justify-items: center;
+    grid-template-areas: "summary_title" "place_order";
   }
 }
 
