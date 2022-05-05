@@ -539,7 +539,7 @@ footer {
   /* popup */
   .card {
     visibility: hidden;
-    background-color: #ffffff;
+    background-color: #f4f2ed;
     opacity: 0;
   }
 

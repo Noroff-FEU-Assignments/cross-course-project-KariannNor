@@ -93,6 +93,23 @@
 
         <div class="billing">
           <h1 class="p2">Billing info</h1>
+          <div id="popup" class="card">
+            <a href="#"> <i class="fa-solid fa-x"></i></a>
+            <form action=".." method="POST" id="card_info">
+              <label for="number" class="p1">Card number</label>
+              <input type="card" name="card" id="card" class="form__billing" />
+              <label for="number" class="p1">MM/DD</label>
+              <input type="card" name="card" id="card" class="form__billing" />
+              <label for="number" class="p1">CVC</label>
+              <input type="card" name="card" id="card" class="form__billing" />
+              <p class="p1">
+                Next, submit order, <br />you won't get charged yet!
+              </p>
+            </form>
+            <div class="card_cta">
+              <a href="../checkout.html" class="select">continue</a>
+            </div>
+          </div>
           <p class="p1 fields">All fields required</p>
           <form action=".." method="POST" id="form_billinginfo">
             <label for="email" class="p1">E-mail</label>
@@ -119,27 +136,11 @@
               Billing address same as shipping</label
             >
           </form>
+
           <p class="divider_small hidden"></p>
         </div>
         <div class="payment">
           <h1 class="p2">Select payment</h1>
-          <div id="popup" class="card">
-            <a href="#"> <i class="fa-solid fa-x"></i></a>
-            <form action=".." method="POST" id="card_info">
-              <label for="number" class="p1">Card number</label>
-              <input type="card" name="card" id="card" class="form__billing" />
-              <label for="number" class="p1">MM/DD</label>
-              <input type="card" name="card" id="card" class="form__billing" />
-              <label for="number" class="p1">CVC</label>
-              <input type="card" name="card" id="card" class="form__billing" />
-              <p class="p1">
-                Next, submit order, <br />you won't get charged yet!
-              </p>
-            </form>
-            <div class="card_cta">
-              <a href="../checkout.html" class="select">continue</a>
-            </div>
-          </div>
           <table class="select_payment">
             <tr>
               <td><a href="#popup" class="select">&nbsp;Vipps&nbsp;</a></td>
