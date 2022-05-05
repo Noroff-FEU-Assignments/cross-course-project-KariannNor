@@ -391,97 +391,6 @@ footer {
     font-size: 15px;
   }
 
-  /* a:hover {
-      display: none;
-    } */
-  .nav-items {
-    font-size: 14px;
-  }
-
-  .intro {
-    background-image: url(../images/hiking_800w.jpg);
-  }
-
-  .fa-solid {
-    margin: 0 5px;
-    line-height: 0.7rem;
-  }
-
-  .intro_heading {
-    font-size: 32px;
-  }
-  .intro {
-    min-height: 45vh;
-    background-position-x: center;
-    background-position-y: bottom;
-  }
-
-  .intro div {
-    padding: 25px 40px;
-    text-align: center;
-  }
-
-  .card-text {
-    font-size: 20px;
-  }
-
-  .category {
-    margin: -20px auto -155px auto;
-  }
-
-  .categories {
-    flex-direction: column;
-    gap: none;
-    margin: -70px auto -50px;
-    padding: 20px;
-  }
-
-  .new-arrivals {
-    margin: 150px auto;
-  }
-
-  .products {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
-
-  .shop_category_container {
-    margin: -120px auto;
-  }
-
-  .category_cards {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    line-height: 0.5rem;
-    row-gap: 20px;
-  }
-  .newsletter {
-    margin: 100px auto;
-  }
-
-  .footer_nav {
-    max-width: 160px;
-  }
-
-  .footer_some {
-    text-align: left;
-    margin: -250px 30px 0px;
-  }
-  .nav-items.footer {
-    font-size: 14px;
-  }
-  .footer_some img {
-    max-width: 30px;
-    padding: 15px 10px 5px 0px;
-  }
-
-  .fa-cart-shopping {
-    font-size: 15px;
-  }
-
-  /* a:hover {
-      display: none;
-    } */
   .nav-items {
     font-size: 14px;
   }
@@ -634,6 +543,11 @@ footer {
     opacity: 0;
   }
 
+  #popup {
+    position: fixed;
+    margin: -322px 0;
+  }
+
   .card:target {
     visibility: visible;
     opacity: 1;
@@ -652,5 +566,68 @@ footer {
   }
   .place_order {
     margin: 0 auto;
+  }
+}
+
+/* EXTRA MEDIA QUERY*/
+@media (min-width: 481px) and (max-width: 800px) {
+  .products {
+    gap: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto, auto;
+  }
+
+  .product_description {
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: 1fr;
+    padding: 10px;
+    grid-gap: 30px;
+    grid-template-areas:
+      "product_one"
+      "product_text"
+      "description_text"
+      "product_two"
+      "product_three"
+      "product_four";
+    margin: 10px 10px 10px 10px;
+    padding: 20px 10px 10px 10px;
+  }
+
+  .about_section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 30px;
+    grid-template-areas:
+      "about" "about"
+      "founders" "founders"
+      "newsletter" "newsletter"
+      "picsone" "picstwo";
+
+    margin: 20px;
+  }
+
+  .contact_section {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10px;
+    grid-gap: 30px;
+    grid-template-areas: "about" "form" "founders" "newsletter";
+    margin-bottom: -125px;
+    padding: 20px;
+  }
+  /* shopping cart */
+  .shoppingcart {
+    justify-items: left;
+    display: grid;
+    gap: 30px;
+    margin: 40px 40px;
+    grid-template-rows: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "summary_title"
+      "billing"
+      "payment";
   }
 }

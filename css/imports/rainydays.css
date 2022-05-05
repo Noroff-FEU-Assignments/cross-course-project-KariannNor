@@ -114,6 +114,7 @@
 
 .wrapper {
   margin-top: -50px;
+  width: 90%;
 }
 
 .form__contact {
@@ -340,6 +341,9 @@ textarea {
 .select_payment {
   border-collapse: separate;
   border-spacing: 0 30px;
+  margin: 0 auto;
+  table-layout: auto;
+  width: 250px;
 }
 
 .select {
