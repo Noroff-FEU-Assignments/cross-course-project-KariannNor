@@ -341,7 +341,6 @@ textarea {
 .select_payment {
   border-collapse: separate;
   border-spacing: 0 30px;
-  margin: 0 auto;
   table-layout: auto;
   width: 250px;
 }
@@ -453,4 +452,13 @@ li {
 }
 .last {
   margin: 0 0 -10px 0;
+}
+
+/* terms section */
+
+.terms_section {
+  max-width: 600px;
+
+  margin: 20px auto;
+  padding: 0 40px;
 }

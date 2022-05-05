@@ -173,6 +173,10 @@
     margin: 50px 0 30px 0;
   }
 
+  .select_payment {
+  margin:0 auto;
+  }
+
   /* popup */
   .card {
     visibility: hidden;

@@ -383,6 +383,7 @@ footer {
   margin: 10px 0px;
 }
 
+
 /* mobile styles*/
 @media (max-width: 480px) {
   /* -------- Header -------- */
@@ -545,7 +546,7 @@ footer {
 
   #popup {
     position: fixed;
-    margin: -322px 0;
+    margin: -630px 0;
   }
 
   .card:target {
@@ -565,6 +566,10 @@ footer {
     grid-template-areas: "summary_title" "place_order";
   }
   .place_order {
+    margin: 0 auto;
+  }
+
+  .select_payment {
     margin: 0 auto;
   }
 }
@@ -629,5 +634,14 @@ footer {
       "summary_title"
       "billing"
       "payment";
+  }
+
+  .divider_small.hidden {
+    border-top: solid 1px #f2a766;
+    margin: 50px 0 30px 0;
+  }
+
+  .select_payment {
+    margin: 0 auto;
   }
 }
