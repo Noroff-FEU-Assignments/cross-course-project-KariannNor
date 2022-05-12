@@ -1,0 +1,232 @@
+/* women & mens page */
+
+.active {
+  text-decoration: underline;
+}
+
+.product_intro {
+  padding: 0 20px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+.category_title {
+  color: #053541;
+  font-size: 48px;
+  line-height: 1.5rem;
+  top: 0;
+}
+
+.cta_filter {
+  display: inline-flex;
+  color: #257ea1;
+  border-style: solid;
+  font-size: 14px;
+  font-weight: 300;
+  text-decoration: none;
+  padding: 10px 15px;
+  margin: 10px;
+}
+
+.cta_filter:hover {
+  background-color: #257ea1;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.cta_filter:active {
+  background-color: #257ea1;
+  color: #ffffff;
+}
+
+.select {
+  padding: 10px 50px;
+  font-size: 16px;
+}
+
+.featured_products {
+  margin: 0px auto;
+  max-width: 800px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+  grid-gap: 10px;
+}
+
+.p1_strong {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.color {
+  display: inline-flex;
+  padding: 10px 10px;
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.one {
+  background-color: #257ea1;
+}
+
+.two {
+  background-color: #f2a766;
+}
+
+.three {
+  background-color: #7da781;
+}
+.four {
+  background-color: #f4f2ed;
+  border: solid 0.25px #878787;
+}
+
+.color:active {
+  border: solid 1px #878787;
+}
+
+/* Jacket specific */
+
+.product_description {
+  max-width: 800px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin: 40px auto;
+  grid-gap: 20px;
+  grid-template-areas:
+    "product_one product_text"
+    "product_one product_text"
+    "product_two product_text"
+    "product_two product_text"
+    "product_three description_text"
+    "product_four description_text";
+}
+
+.product_one {
+  grid-area: product_one;
+}
+.product_two {
+  grid-area: product_two;
+}
+.product_three {
+  grid-area: product_three;
+}
+.product_four {
+  grid-area: product_four;
+}
+
+.product_text {
+  grid-area: product_text;
+}
+
+.description_text {
+  grid-area: description_text;
+}
+
+
+.title_price_rating {
+  margin: -23px 10px 0 0;
+}
+
+.subtitle {
+  font-family: "museo-slab", Arial, Helvetica, sans-serif;
+  font-weight: 900;
+  font-size: 32px;
+  line-height: 1.4rem;
+  color: #053541;
+}
+
+.fa-star,
+.fa-star-half-stroke {
+  margin-left: 10px 5px 5px 0;
+  color: #053541;
+  font-size: 16px;
+}
+.rating {
+  font-size: 14px;
+  font-weight: 300;
+  color: #053541;
+  text-decoration: underline;
+  margin: 0px 10px 10px 0;
+}
+
+.color_section {
+  margin: 50px 0 0 0;
+}
+
+.color_section > .p1 {
+  margin: 0 0 5px 0;
+}
+
+.color {
+  margin: 0 10px 0 0;
+}
+
+.size {
+  display: inline-block;
+  border: solid 1px #257ea1;
+  padding: 10px 10px;
+  margin: 20px 10px 5px 0;
+  font-size: 14px;
+  font-weight: 300;
+}
+
+.size:hover {
+  background-color: #257ea1;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.size:active {
+  background-color: #257ea1;
+  color: #ffffff;
+}
+
+.quantity > .inline {
+  display: inline-block;
+}
+.quantity > .p1 {
+  margin: 10px 0 -16px 0;
+}
+
+.quantity {
+  margin-top: 50px;
+}
+
+.cta_add {
+  display: inline-flex;
+  background-color: #c4504d;
+  color: #ffffff;
+  border-style: solid;
+  font-size: 16px;
+  font-weight: 300;
+  font-variant: small-caps;
+  text-decoration: none;
+  padding: 10px 110px;
+  margin-bottom: 30px;
+}
+
+.cta_add:hover {
+  background-color: #f2a766;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.cta_add:active {
+  background-color: #c4504d;
+  color: #ffffff;
+}
+
+.returns {
+  margin: 50px auto;
+  padding: 100px 50px;
+}
+
+.product_description img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}

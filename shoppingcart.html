@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script
+      src="https://kit.fontawesome.com/d518c97c1e.js"
+      crossorigin="anonymous"
+    ></script>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Rainydays Rainjackets. Push the comfort zone with our awsome jackets. Satisfaction guaranteed or money back."
+    />
+    <title>Rainydays | Checkout</title>
+    <script
+      src="https://kit.fontawesome.com/d518c97c1e.js"
+      crossorigin="anonymous"
+    ></script>
+    <link href="css/styles.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header>
+      <a href="index.html">
+        <img
+          src="images/logo.svg"
+          alt="Rainydays - Pushing Your Comfort Zone"
+          id="logo"
+        />
+      </a>
+
+      <nav>
+        <a href="womens.html" class="nav-items">Womens</a>
+        <a href="mens.html" class="nav-items">Mens</a>
+        <a href="about.html" class="nav-items">Who we are</a>
+        <a href="contact.html" class="nav-items">Contact</a>
+        <a href="shoppingcart.html" alt="Go to shopping cart">
+          <i class="fa-solid fa-cart-shopping active"></i
+        ></a>
+      </nav>
+    </header>
+    <main>
+      <div class="crumbs">
+        <p class="crumbs_nav"><a href="index.html">Home</a></p>
+        <p class="crumbs_nav">|</p>
+        <p class="crumbs_nav"><a href="womens.html">Womens</a></p>
+        <p class="crumbs_nav">|</p>
+        <p class="crumbs_nav active">
+          <a href="shoppingcart.html">Checkout</a>
+        </p>
+      </div>
+      <section class="shoppingcart">
+        <div class="summary_title">
+          <h1 class="p2">Order summary</h1>
+          <p class="p1"><strong>Total:</strong> $186.00</p>
+          <p class="divider_small"></p>
+          <h2 class="p1"><strong>Yukon Insulated Hoodie</strong></h2>
+          <p class="p1">
+            <br /><strong>Color:</strong> Olive Green <br /><strong
+              >Size:</strong
+            >
+            M <br /><strong>Item:</strong> 00112153
+          </p>
+          <div class="quantity_summary">
+            <h3 class="p1">Quantity</h3>
+            <p class="inline">-</p>
+            <p class="size">1</p>
+            <p class="inline">+</p>
+          </div>
+          <div class="edit_remove">
+            <a href="../products/yukon.html" class="remove">Edit</a>
+            <p class="remove_or">or</p>
+            <a href="../womens.html" class="remove">Remove</a>
+          </div>
+          <p class="divider_small"></p>
+          <div class="shipping">
+            <h2 class="p2">Shipping</h2>
+            <ol>
+              <li class="p1">
+                <input type="radio" name="free" value="free_shipping" checked />
+                You have free shipping on this item.
+                <strong> Estimated arrival Wed, Jan. 26</strong>
+              </li>
+              <li class="p1">
+                <input type="radio" name="free" value="free_shipping" />
+                <strong>Need it faster?</strong> <br />Express overnight
+                delivery <strong>$25.00</strong>
+              </li>
+            </ol>
+            <p class="divider_small hidden"></p>
+          </div>
+        </div>
+
+        <div class="billing">
+          <h1 class="p2">Billing info</h1>
+          <div id="popup" class="card">
+            <a href="#"> <i class="fa-solid fa-x"></i></a>
+            <form action=".." method="POST" id="card_info">
+              <label for="number" class="p1">Card number</label>
+              <input type="card" name="card" id="card" class="form__billing" />
+              <label for="number" class="p1">MM/DD</label>
+              <input type="card" name="card" id="card" class="form__billing" />
+              <label for="number" class="p1">CVC</label>
+              <input type="card" name="card" id="card" class="form__billing" />
+              <p class="p1">
+                Next, submit order, <br />you won't get charged yet!
+              </p>
+            </form>
+            <div class="card_cta">
+              <a href="../checkout.html" class="select">continue</a>
+            </div>
+          </div>
+          <p class="p1 fields">All fields required</p>
+          <form action=".." method="POST" id="form_billinginfo">
+            <label for="email" class="p1">E-mail</label>
+            <input type="email" name="email" id="email" class="form__billing" />
+            <label for="name" class="p1">First name</label>
+            <input type="text" name="name" id="name" class="form__billing" />
+            <label for="name" class="p1">Last name</label>
+            <input type="text" name="name" id="name" class="form__billing" />
+            <label for="name" class="p1">Street address</label>
+            <input type="text" name="name" id="name" class="form__billing" />
+            <label for="name" class="p1">City</label>
+            <input type="text" name="name" id="name" class="form__billing" />
+            <label for="name" class="p1">state</label>
+            <input type="text" name="name" id="name" class="form__billing" />
+            <label for="name" class="p1">postal code</label>
+            <input
+              type="number"
+              name="number"
+              id="number"
+              class="form__billing"
+            />
+            <input type="checkbox" name="shipping" value="shipping" />
+            <label for="shipping" class="p1">
+              Billing address same as shipping</label
+            >
+          </form>
+
+          <p class="divider_small hidden"></p>
+        </div>
+        <div class="payment">
+          <h1 class="p2">Select payment</h1>
+          <table class="select_payment">
+            <tr>
+              <td><a href="#popup" class="select">&nbsp;Vipps&nbsp;</a></td>
+            </tr>
+            <tr>
+              <td><a href="#popup" class="select">Paypal</a></td>
+            </tr>
+            <tr>
+              <td><a href="#popup" class="select">Klarna</a></td>
+            </tr>
+            <tr>
+              <td>
+                <a href="#popup" class="select">&nbsp;&nbsp;Visa&nbsp;&nbsp;</a>
+              </td>
+            </tr>
+          </table>
+          <p class="divider_small hidden"></p>
+        </div>
+      </section>
+      <div class="mountain"></div>
+    </main>
+
+    <footer>
+      <section class="footer_nav">
+        <div class="footer_nav_items">
+          <a href="about.html" class="nav-items footer">Who we are</a>
+        </div>
+        <div class="footer_nav_items">
+          <a href="contact.html" class="nav-items footer">Contact</a>
+        </div>
+        <div class="footer_nav_items">
+          <a href="womens.html" class="nav-items footer">Womens Jackets</a>
+        </div>
+        <div class="footer_nav_items">
+          <a href="mens.html" class="nav-items footer">Mens Jackets</a>
+        </div>
+        <div class="footer_nav_items">
+          <a href="about.html" class="nav-items footer">Shipping & returns</a>
+        </div>
+        <div class="footer_nav_items">
+          <a href="terms.html" class="nav-items footer"
+            >Privacy policy & Terms of sale</a
+          >
+        </div>
+      </section>
+      <section class="footer_some">
+        <div class="some">
+          <h2 class="some_text">Follow us!</h2>
+        </div>
+        <div class="some_links">
+          <a href="https://www.facebook.com/">
+            <img src="../images/some/facebook.png" alt="Follow us on Facebook"
+          /></a>
+          <a href="https://www.instagram.com/">
+            <img src="../images/instag.png" alt="Follow us on Instagram"
+          /></a>
+          <a href="https://www.linkedin.com/">
+            <img src="../images/some/linkedin.png" alt="Follow us on LinkedIn"
+          /></a>
+        </div>
+      </section>
+    </footer>
+  </body>
+</html>
