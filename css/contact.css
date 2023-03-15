@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+#messageSent {
+  font-size: 20px;
+  color: rgb(0, 155, 49);
+  text-decoration: underline;
+  margin: 0px 0px 20px 0px;
+}
+
+.form-error {
+  display: none;
+  color: red;
+  font-size: 10px;
+  margin-top: 2px;
+}

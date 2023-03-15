@@ -34,7 +34,7 @@
   text-decoration: none;
 }
 
-.cta_filter:active {
+.cta_filter:focus {
   background-color: #257ea1;
   color: #ffffff;
 }
@@ -126,7 +126,6 @@
   grid-area: description_text;
 }
 
-
 .title_price_rating {
   margin: -23px 10px 0 0;
 }
@@ -181,6 +180,11 @@
 }
 
 .size:active {
+  background-color: #257ea1;
+  color: #ffffff;
+}
+
+.focus {
   background-color: #257ea1;
   color: #ffffff;
 }

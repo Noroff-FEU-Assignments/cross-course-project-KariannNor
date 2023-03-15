@@ -123,6 +123,17 @@ h3 {
   line-height: 1.4rem;
 }
 
+.p3 {
+  font-family: "museo-sans", Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  /* line-height: 1.4rem; */
+}
+
+.size > span {
+  font-size: 16px;
+}
+
 img {
   width: 100%;
   height: auto;
@@ -156,6 +167,26 @@ a:hover {
   margin: 50px auto;
 }
 
+.submit {
+  color: #01893b;
+  border: 1px solid #01893b;
+  background-color: #ffffff;
+  font-size: 16px;
+  font-variant: small-caps;
+  font-weight: 300;
+  text-decoration: none;
+  padding: 12px 60px;
+  margin: 50px auto;
+  display: inline-flex;
+  letter-spacing: 0.5px;
+}
+
+.submit:hover {
+  background-color: #01893b;
+  color: #ffffff;
+  font-weight: 700;
+}
+
 .cta_newsletter:hover {
   background-color: #257ea1;
   color: #ffffff;
@@ -179,6 +210,11 @@ a:hover {
   font-weight: 300;
 }
 
+.focus {
+  background-color: #257ea1;
+  color: #ffffff;
+}
+
 /* -------- Header --------*/
 header {
   align-items: center;
@@ -187,12 +223,20 @@ header {
   text-align: center;
   padding-bottom: 20px;
 }
-
-nav {
+*/ nav {
   background-color: #f4f2ed;
   color: #053541;
   padding: 5px;
   justify-items: center;
+}
+
+ul {
+  margin-top: 0px;
+}
+
+li {
+  list-style: none;
+  display: inline-block;
 }
 
 #logo {
@@ -208,11 +252,25 @@ nav {
   margin: 0 auto;
   font-weight: 300;
 }
-
 .fa-cart-shopping {
   margin-left: 20px;
   color: #053541;
 }
+
+.fa-plus,
+.fa-minus {
+  font-size: 20px;
+}
+
+span {
+  font-size: 10px;
+  color: #053541;
+}
+
+/* <i class="fa-solid fa-cart-plus"></i>
+.fa-cart-plus {
+  color: red; 
+} */
 
 /* -------- Footer -------- */
 
@@ -497,6 +555,21 @@ footer {
     padding: 20px;
   }
 
+  #messageSent {
+    font-size: 20px;
+    color: rgb(0, 155, 49);
+    text-decoration: underline;
+    margin: 0px 0px 20px 0px;
+  }
+
+  .form-error {
+    display: none;
+    color: red;
+    font-size: 0.9rem;
+    margin-top: 2px;
+    font-size: 10px;
+  }
+
   /* Product page - YUKON jacket */
   .product_description {
     display: grid;
@@ -536,6 +609,7 @@ footer {
     border-top: solid 1px #f2a766;
     margin: 50px 0 30px 0;
   }
+
   /* popup */
   .card {
     visibility: hidden;

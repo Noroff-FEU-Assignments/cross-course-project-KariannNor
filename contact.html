@@ -18,6 +18,8 @@
       crossorigin="anonymous"
     ></script>
     <link href="css/styles.css" rel="stylesheet" />
+    <link href="css/contact.css" rel="stylesheet" />
+    <link href="css/imports/rainydays.css" rel="stylesheet" />
 
     <!-- Hotjar Tracking Code for https://musing-chandrasekhar-630c9a.netlify.app/index.html -->
     <script>
@@ -35,6 +37,8 @@
         a.appendChild(r);
       })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
+    <script defer src="/js/contact.js"></script>
+    <script defer src="/js/cart.js"></script>
   </head>
   <body>
     <header>
@@ -47,13 +51,17 @@
       </a>
 
       <nav>
-        <a href="womens.html" class="nav-items">Womens</a>
-        <a href="mens.html" class="nav-items">Mens</a>
-        <a href="about.html" class="nav-items">Who we are</a>
-        <a href="contact.html" class="nav-items active">Contact</a>
-        <a href="shoppingcart.html" alt="Go to shopping cart">
-          <i class="fa-solid fa-cart-shopping"></i
-        ></a>
+        <ul>
+          <li><a href="womens.html" class="nav-items">Womens</a></li>
+          <li><a href="mens.html" class="nav-items">Mens</a></li>
+          <li><a href="about.html" class="nav-items">Who we are</a></li>
+          <li><a href="contact.html" class="nav-items active">Contact</a></li>
+          <li>
+            <a href="shoppingcart.html" alt="Go to shopping cart">
+              <i class="fa-solid fa-cart-shopping"><span>0</span></i></a
+            >
+          </li>
+        </ul>
       </nav>
     </header>
     <main>
@@ -99,10 +107,21 @@
         <div class="wrapper">
           <h2 class="h3">Get in touch!</h2>
           <form action=".." method="POST" id="form">
+            <div class="messageContainer" id="messageSent"></div>
+            <p class="p1 fields">All fields required</p>
+
             <label for="email" class="p1">E-mail</label>
-            <input type="email" name="email" id="email" class="form__contact" />
+            <input type="email" name="email" id="email" class="form__billing" />
+            <div class="form-error" id="emailError">
+              <p class="p3">Please enter your email</p>
+            </div>
+
             <label for="name" class="p1">Full name</label>
-            <input type="text" name="name" id="name" class="form__contact" />
+            <input type="text" name="name" id="name" class="form__billing" />
+            <div class="form-error" id="nameError">
+              <p class="p3">Please enter your full name</p>
+            </div>
+
             <label for="message" class="p1">Message</label>
             <textarea
               class="form__contact"
@@ -110,10 +129,14 @@
               rows="5"
               cols="30"
               class="form__contact"
+              id="message"
             >
-Type your message here</textarea
-            >
-            <a href="contact.html" class="cta_contact">submit</a>
+            </textarea>
+            <div class="form-error" id="messageError">
+              <p class="p3">Your message must be at least 10 characters</p>
+            </div>
+
+            <button class="submit">submit</button>
           </form>
         </div>
 

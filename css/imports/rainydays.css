@@ -135,7 +135,7 @@ textarea {
 /* Order Summary */
 
 .fa-x {
-  margin: 20px 0 40px 0;
+  margin: 20px 0 0px 0;
   font-size: 16px;
   transition: transform 250ms, opacity 400ms;
 }
@@ -150,10 +150,6 @@ textarea {
   width: 300px;
   margin: 20px auto;
   padding: 20px 20px 50px 20px;
-}
-
-.p3 {
-  font-size: 12px;
 }
 
 .divider_small {
@@ -205,7 +201,7 @@ textarea {
 }
 
 .cta_continue {
-  background-color: #c4504d;
+  background-color: #f2a766;
   color: #ffffff;
   border-style: solid;
   font-size: 16px;
@@ -219,7 +215,7 @@ textarea {
 }
 
 .cta_continue:hover {
-  background-color: #f2a766;
+  background-color: #257ea1;
   color: #ffffff;
   text-decoration: none;
 }

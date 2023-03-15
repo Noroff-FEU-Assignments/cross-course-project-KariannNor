@@ -35,6 +35,7 @@
         a.appendChild(r);
       })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
+    <script defer src="/js/cart.js"></script>
   </head>
   <body>
     <header>
@@ -47,20 +48,22 @@
       </a>
 
       <nav>
-        <a href="womens.html" class="nav-items">Womens</a>
-        <a href="mens.html" class="nav-items">Mens</a>
-        <a href="about.html" class="nav-items">Who we are</a>
-        <a href="contact.html" class="nav-items">Contact</a>
-        <a href="shoppingcart.html" alt="Go to shopping cart">
-          <i class="fa-solid fa-cart-shopping active"></i
-        ></a>
+        <ul>
+          <li><a href="womens.html" class="nav-items">Womens</a></li>
+          <li><a href="mens.html" class="nav-items">Mens</a></li>
+          <li><a href="about.html" class="nav-items">Who we are</a></li>
+          <li><a href="contact.html" class="nav-items">Contact</a></li>
+          <li>
+            <a href="shoppingcart.html" alt="Go to shopping cart">
+              <i class="fa-solid fa-cart-shopping"><span>0</span></i></a
+            >
+          </li>
+        </ul>
       </nav>
     </header>
     <main>
       <div class="crumbs">
         <p class="crumbs_nav"><a href="index.html">Home</a></p>
-        <p class="crumbs_nav">|</p>
-        <p class="crumbs_nav"><a href="womens.html">Womens</a></p>
         <p class="crumbs_nav">|</p>
         <p class="crumbs_nav active">
           <a href="shoppingcart.html">Checkout</a>
@@ -68,44 +71,7 @@
       </div>
       <section class="shoppingcart">
         <div class="summary_title">
-          <h1 class="p2">Order summary</h1>
-          <p class="p1"><strong>Total:</strong> $186.00</p>
-          <p class="divider_small"></p>
-          <h2 class="p1"><strong>Yukon Insulated Hoodie</strong></h2>
-          <p class="p1">
-            <br /><strong>Color:</strong> Olive Green <br /><strong
-              >Size:</strong
-            >
-            M <br /><strong>Item:</strong> 00112153
-          </p>
-          <div class="quantity_summary">
-            <h3 class="p1">Quantity</h3>
-            <p class="inline">-</p>
-            <p class="size">1</p>
-            <p class="inline">+</p>
-          </div>
-          <div class="edit_remove">
-            <a href="../products/yukon.html" class="remove">Edit</a>
-            <p class="remove_or">or</p>
-            <a href="../womens.html" class="remove">Remove</a>
-          </div>
-          <p class="divider_small"></p>
-          <div class="shipping">
-            <h2 class="p2">Shipping</h2>
-            <ol>
-              <li class="p1">
-                <input type="radio" name="free" value="free_shipping" checked />
-                You have free shipping on this item.
-                <strong> Estimated arrival Wed, Jan. 26</strong>
-              </li>
-              <li class="p1">
-                <input type="radio" name="free" value="free_shipping" />
-                <strong>Need it faster?</strong> <br />Express overnight
-                delivery <strong>$25.00</strong>
-              </li>
-            </ol>
-            <p class="divider_small hidden"></p>
-          </div>
+          <div class="products_cart"></div>
         </div>
 
         <div class="billing">
