@@ -10,15 +10,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Rainydays Rainjackets for men. Push the comfort zone with our awsome jackets. Satisfaction guaranteed or money back."
+      content="Chesapeak - our fantastic water resistant jacket. Push the comfort zone with Rainydays Rainjackets. Satisfaction guaranteed or money back."
     />
-    <title>Rainydays | Mens</title>
+    <title>Rainydays | Our jackets</title>
     <script
       src="https://kit.fontawesome.com/d518c97c1e.js"
       crossorigin="anonymous"
     ></script>
     <link href="css/styles.css" rel="stylesheet" />
-    <link href="css/imports/products.css" rel="stylesheet" />
 
     <!-- Hotjar Tracking Code for https://musing-chandrasekhar-630c9a.netlify.app/index.html -->
     <script>
@@ -36,15 +35,15 @@
         a.appendChild(r);
       })(window, document, "https://static.hotjar.com/c/hotjar-", ".js?sv=");
     </script>
-    <script defer src="/js/cart.js"></script>
-    <script defer src="/js/data.js"></script>
-    <script defer src="/js/products.js"></script>
+    <script defer src="/js/product.js"></script>
+    <script defer src="/js/cart.js" type="module"></script>
+    <script defer src="/js/data.js" type="module"></script>
   </head>
   <body>
     <header>
-      <a href="index.html">
+      <a href="../index.html">
         <img
-          src="images/logo.svg"
+          src="../images/logo.svg"
           alt="Rainydays - Pushing Your Comfort Zone"
           id="logo"
         />
@@ -52,12 +51,12 @@
 
       <nav>
         <ul>
-          <li><a href="womens.html" class="nav-items">Womens</a></li>
-          <li><a href="mens.html" class="nav-items active">Mens</a></li>
-          <li><a href="about.html" class="nav-items">Who we are</a></li>
-          <li><a href="contact.html" class="nav-items">Contact</a></li>
+          <li><a href="/womens.html" class="nav-items">Womens</a></li>
+          <li><a href="/mens.html" class="nav-items">Mens</a></li>
+          <li><a href="/about.html" class="nav-items">Who we are</a></li>
+          <li><a href="/contact.html" class="nav-items">Contact</a></li>
           <li>
-            <a href="shoppingcart.html" alt="Go to shopping cart">
+            <a href="/shoppingcart.html" alt="Go to shopping cart">
               <i class="fa-solid fa-cart-shopping"><span>0</span></i></a
             >
           </li>
@@ -66,31 +65,27 @@
     </header>
     <main>
       <div class="crumbs">
-        <p class="crumbs_nav"><a href="index.html">Home</a></p>
+        <p class="crumbs_nav"><a href="../index.html">Home</a></p>
         <p class="crumbs_nav">|</p>
-        <p class="crumbs_nav active"><a href="mens.html">Mens</a></p>
+        <p class="crumbs_nav">Jackets</p>
       </div>
+      <div class="loader">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+      <section class="product_description"></section>
 
-      <section class="featured_products">
-        <div class="product_intro">
-          <h1 class="category_title">Mens</h1>
-          <a href="#" class="cta_filter">Filter option</a>
-          <a href="#" class="cta_filter">Filter option</a>
-          <a href="#" class="cta_filter">Filter option</a>
-          <a href="#" class="cta_filter">Filter option</a>
-        </div>
-
-        <div class="products"></div>
-
-        <div class="loader">
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-          <div class="bar"></div>
-        </div>
-      </section>
-
+      <div class="newsletter return">
+        <h1 class="titles">Did you know?</h1>
+        <p class="p1">
+          If you are not completely satisfied with your jacket you can return it
+          with a full refund.
+        </p>
+        <a href="../contact.html" class="cta_newsletter">returns</a>
+      </div>
       <div class="mountain"></div>
     </main>
 

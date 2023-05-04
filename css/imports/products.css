@@ -8,7 +8,6 @@
   padding: 0 20px;
   margin: 0 auto;
   max-width: 800px;
-  display: none;
 }
 
 .category_title {
@@ -27,6 +26,7 @@
   text-decoration: none;
   padding: 10px 15px;
   margin: 10px;
+  display: none;
 }
 
 .cta_filter:hover {
@@ -38,6 +38,10 @@
 .cta_filter:focus {
   background-color: #257ea1;
   color: #ffffff;
+}
+
+.text_card {
+  margin-bottom: -10px;
 }
 
 .select {
@@ -100,8 +104,8 @@
   grid-template-areas:
     "product_one product_text"
     "product_one product_text"
-    "product_two product_text"
-    "product_two product_text"
+    "product_one product_text"
+    "product_one product_text"
     "product_three description_text"
     "product_four description_text";
 }
@@ -211,6 +215,7 @@
   font-variant: small-caps;
   text-decoration: none;
   padding: 10px 110px;
+  margin-top: 30px;
   margin-bottom: 30px;
 }
 

@@ -1,3 +1,5 @@
+
+
 let carts = document.querySelectorAll('.cta_add');
 
 let products = [
@@ -26,6 +28,7 @@ let products = [
 
 },
 ];
+
 
 for(let i=0; i< carts.length; i++) {
   carts[i].addEventListener('click', () => {
@@ -104,7 +107,6 @@ function displayCart(){
   cartItems = JSON.parse(cartItems);
   let productContainer = document.querySelector(".products_cart");
 
-
   if(cartItems && productContainer) {
     productContainer.innerHTML = '';
     Object.values(cartItems).map(item => {
@@ -117,11 +119,12 @@ function displayCart(){
       <div class="thumbnail">
       <img src="./images/products/${item.img}.jpg"/>
       </div>
+
       <div class="quantity_summary"><h3 class="p1 quantity">Quantity</h3>
       <p class="inline decrease"><i class="fa-solid fa-minus"></i></p>
       <p class="size"><span>${item.inCart}</span></p>
-      <p class="inline increase"><i class="fa-solid fa-plus"></i></p></div>
-
+      <p class="inline increase"><i class="fa-solid fa-plus"></i></p>
+      </div>
 
       <p class="divider_small"></p>
       <div class="shipping">
@@ -146,9 +149,6 @@ function displayCart(){
 
   }
 }
-
-
-
 
 onLoadCartNumbers();
 displayCart();
