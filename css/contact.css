@@ -1,5 +1,13 @@
-* {
-  box-sizing: border-box;
+
+
+.contact_section {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  padding: 10px;
+  grid-gap: 30px;
+  grid-template-areas: "about" "form" "founders" "newsletter";
+  margin-bottom: -125px;
+  padding: 20px;
 }
 
 #messageSent {
@@ -12,6 +20,7 @@
 .form-error {
   display: none;
   color: red;
-  font-size: 10px;
+  font-size: 0.9rem;
   margin-top: 2px;
+  font-size: 10px;
 }

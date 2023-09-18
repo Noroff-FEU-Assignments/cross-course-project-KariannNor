@@ -1,5 +1,54 @@
-# cross-course-project-KariannNor
-cross-course-project-KariannNor created by GitHub Classroom
-My first home page is made. It's not optimal and not what i would've liked it to look like. However i'm in a learning state and making progress with code. 
+# Rainydays - Pushing the comfort zone
 
-My header is not containing the hamburger-icon, only because of time issues. Unfortunately. It's responsive. Have had some strugles with the font being displayed properly and some navigational issues.
+![image](https://musing-chandrasekhar-630c9a.netlify.app/images/hiking_1600w_v2.jpg)
+
+## Description
+
+Welcome to the Rain Jacket Online Shop Website Project! This project is aimed at creating a functional and responsive website for an online shop specializing in men's and women's rain jackets. These jackets are designed for various outdoor activities, enriching people's lives by providing comfort and durability in different weather conditions.
+
+## Project Objectives
+
+- Develop a fully functioning and responsive website.
+- Implement HTML and CSS skills learned during the course.
+- Create a user-friendly interface for customers to explore and purchase rain jackets.
+- Ensure website accessibility (WCAG compliant).
+- Provide unique meta descriptions, titles, and H1 tags for each page.
+- Deliver a well-documented report outlining the project process.
+
+## Slogan
+
+Slogan: Pushing the Comfort Zone
+
+## Built With
+
+- Figma (prototyping)
+- PhotoShop (Photo direction)
+- HTML
+- CSS
+- JavaScript
+
+## Getting Started
+
+### Installing
+
+If you would like to add to the project or do edits, go ahead and clone or fork the repository. Use your preffered coding tool, like Visual Studio Code or Atom.
+
+Clone the repo:
+
+```bash
+git clone https://github.com/Noroff-FEU-Assignments/cross-course-project-KariannNor.git
+```
+
+## Running
+
+Add the LiveServer Extension to have a real time view of the site. You should also use the developer tools in Chrome for a overview of the HTML, CSS, and JS.
+
+## Live site
+
+[Rainydays - Pushing the comfort zone ](https://musing-chandrasekhar-630c9a.netlify.app/)
+
+## Contact
+
+Any questions?
+
+[Reach out here](https://www.linkedin.com/in/kariann-norheim-1a342862/)
