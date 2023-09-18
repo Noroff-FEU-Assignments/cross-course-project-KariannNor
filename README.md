@@ -15,10 +15,6 @@ Welcome to the Rain Jacket Online Shop Website Project! This project is aimed at
 - Provide unique meta descriptions, titles, and H1 tags for each page.
 - Deliver a well-documented report outlining the project process.
 
-## Project Scope
-
-Create a responsive website using HTML/CSS, and JavaScript for specific functionalities. Ensure consistent, user-friendly layouts for all pages in the site architecture. Design the website to meet WCAG compliance for accessibility. Optimize each page with unique meta descriptions, titles, and H1 tags for improved SEO. Develop all code from scratch; cite external references used for specific effects in the report.
-
 ## Slogan
 
 Slogan: Pushing the Comfort Zone
